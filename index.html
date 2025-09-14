@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>User Database</title>
+</head>
+<body>
+    <h1>User database</h1>
+
+    <form id="user-form">
+        <label>
+            Username:
+            <input type="text" id="input-username" required>
+        </label>
+        <label>
+            Email:
+            <input type="email" id="input-email" required>
+        </label>
+        <label>
+            Admin:
+            <input type="checkbox" id="input-admin">
+        </label>
+        <label>
+            Image:
+            <input type="file" id="input-image" accept="image/*">
+        </label>
+
+        <button type="submit" id="submit-data">Add User</button>
+    </form>
+//---
+    <table id="user-table">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Admin</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody id="user-tbody">
+        </tbody>
+    </table>
+    <button id="empty-table">Empty Table</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
